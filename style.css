@@ -85,6 +85,69 @@ justify-content: space-between;
 }
 }
 
+.main{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    font-weight: bold;
+}
+.main h1{
+    font-size: 48px;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    margin-bottom: 32px;
+
+}
+.ask-text{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+
+@media (max-width:992px){
+    .main{
+        padding-top: 80px;
+}
+}
+@media (max-width:576px){
+    .main{
+        padding-top: 40px;
+       padding-bottom: 64px;
+}
+.main h1{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+}
+
+.main-col{
+    margin-bottom: 32px;    
+}
+.main-col:last-child{
+    margin-bottom: 0;
+}
+.main-col h2{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.main-col p{
+    font-weight: normal;
+}
+@media (max-width:576px){
+    .main-col{
+        margin-bottom: 24px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
 .footer{
     background: var(--primary);
     color: #ffffff;
