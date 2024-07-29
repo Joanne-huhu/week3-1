@@ -12,7 +12,6 @@
 /*base*/
 *,*::before,*::after{
     box-sizing: border-box;
-outline: 1px solid;
 }
 body{
     font-family: "Roboto", "Noto Sans TC",serif;
@@ -65,8 +64,6 @@ a{
 .header-col{
     display: flex;
 justify-content: space-between;
-   
-
 }
 .header-list{
     margin-left: 64px;
@@ -84,13 +81,140 @@ justify-content: space-between;
     width: 50%;
     border: 1px solid #ffffff;
     margin-left: 0;
+    font-size: 20px;
+}
 }
 
+.footer{
+    background: var(--primary);
+    color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 32px;
+}
+@media (max-width:992px) {
+    .footer{padding-top: 56px;
+}
+}
+@media (max-width:576px) {
+    .footer{padding-top: 24px;
+}
+}
+.footer-col{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+@media (max-width:992px){
+.footer-col{
+ padding-bottom: 32px;   
+}
+}    
+@media (max-width:576px){
+.footer-col{
+ padding-bottom: 24px;   
+}
+}    
+
+.footer-list{
+    display: flex;
+    gap: 48px;
+    margin-bottom: 36px;
 }
 
+@media (max-width:992px){
+    .footer-list{
+        margin-bottom: 32px;
+    }
+}
+@media (max-width:576px){
+    .footer-list{
+        display: none;
+    margin-bottom: 0px;
+}
+}
+.phone{
+    font-size: 36px;
+}
+.mail{
+    font-size: 36px;
+}
+@media (max-width:576px) {
+    .phone{
+        font-size: 16px;
+}
+    .mail{
+        font-size: 16px;
+    }
+}
+.social-contact{
+    gap: 32px;
+}
+.social-contact img{
+max-width: 48px;
+}
+@media (max-width:992px){
+    .social-contact{
+        gap: 16px;  
+    }
+    .social-contact img{
+        max-width: 40px;
+        }
+}
+@media (max-width:576px){
+    .social-contact{
+        gap: 8px;  
+    }
+    .social-contact img{
+    max-width: 24px;
+    }
+}
+.footer-end{
+    padding-top: 32px ;
+    border-top: 1px solid #ffffff;
+    justify-content: space-between;  
+    align-items: center; 
+}
+@media (max-width:992px){
+    .footer-end{
+        padding-top: 40px 0;
+    }
+}
+@media (max-width:576px){
+    .footer-end{
+        padding-top: 24px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+            }
+    .footer-end p{
+        margin-bottom: 8px;
+    }
+}
+.policy{
+    display: flex;
+    gap: 48px;
+    font-size: 14px;
+}
+@media (max-width:576px){
+    .policy{
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+}
 /*utils*/
 .container{
     max-width: 1320px; /* 1296+12+12*/
     margin: 0 auto;
     padding: 0 12px;
+}
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.mb-2{
+    margin-bottom: 8px;
 }
