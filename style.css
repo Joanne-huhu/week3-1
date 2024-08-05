@@ -155,14 +155,6 @@ justify-content: space-between;
 
 
 
-
-
-
-
-
-
-
-
 .footer{
     background: var(--primary);
     color: #ffffff;
@@ -213,16 +205,28 @@ justify-content: space-between;
 .phone{
     font-size: 36px;
 }
+.phone span{
+    font-size: 36px;
+}
 .mail{
+    font-size: 36px;
+}
+.mail span{
     font-size: 36px;
 }
 @media (max-width:576px) {
     .phone{
         font-size: 16px;
 }
+    .phone span{
+        font-size: 16px;
+    }  
     .mail{
         font-size: 16px;
     }
+    .mail span{
+        font-size: 16px;
+    }  
 }
 .social-contact{
     gap: 32px;
